@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="m-10">
+      <h1
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        Hello world!
+      </h1>
+      <button
+        type="button"
+        class="p-4 bg-red-600 text-white rounded-md mt-10"
+        onclick="document.getElementById('demo').innerHTML = Date()"
+      >
+        Click me to display Date and Time.
+      </button>
+      <p id="demo" class="mt-4"></p>
+    </div>
+  </body>
+</html>
