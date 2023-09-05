@@ -59,7 +59,11 @@
     </div>
 
     <div class="m-10">
-      <h2>What can JS Do?</h2>
+      <h2
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        What can JS Do?
+      </h2>
 
       <p id="demo2">JS can change the style of an HTML element.</p>
 
@@ -72,7 +76,11 @@
       </button>
     </div>
     <div class="m-10">
-      <h2>What can JS Do?</h2>
+      <h2
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        What can JS Do?
+      </h2>
 
       <p id="demo3">JS can hide HTML elements.</p>
 
@@ -86,7 +94,11 @@
     </div>
 
     <div class="m-10">
-      <h2>What can JS Do?</h2>
+      <h2
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        What can JS Do?
+      </h2>
 
       <p>JS can show hidden HTML elements.</p>
 
@@ -100,5 +112,68 @@
         Click me!
       </button>
     </div>
+
+    <!-- JAVASCRIPT IN THE BODY  -->
+    <div class="m-10">
+      <h1
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        JavaScript in Body
+      </h1>
+
+      <p id="demo5"></p>
+    </div>
+
+    <!-- JAVASCRIPT FUNCTION  -->
+    <div class="m-10">
+      <h1
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        JavaScript Function
+      </h1>
+
+      <p id="demo6">A paragraph</p>
+
+      <button
+        class="p-4 bg-red-600 text-white rounded-md mt-2"
+        type="button"
+        onclick="myFunction()"
+      >
+        Click me!
+      </button>
+    </div>
+
+    <!-- EXTERNAL JAVASCRIPT  -->
+
+    <div class="m-10">
+      <h1
+        class="text-3xl font-bold leading-10 bg-slate-400 text-white text-center py-10"
+      >
+        Demo External JavaScript
+      </h1>
+
+      <p id="demo7">A paragraph.</p>
+
+      <button
+        class="p-4 bg-red-600 text-white rounded-md mt-2"
+        type="button"
+        onclick="myExternalFunction()"
+      >
+        Click me!
+      </button>
+      <p>This example links to "myScript.js"</p>
+      <p>(myFunction is stored in "myScript.js")</p>
+    </div>
+
+    <!-- JS SCRIPT   -->
+    <script>
+      document.getElementById("demo5").innerHTML = "My first JavaScript.";
+
+      function myFunction() {
+        document.getElementById("demo6").innerHTML = "Paragraph changed.";
+      }
+    </script>
+
+    <script src="myScript.js"></script>
   </body>
 </html>

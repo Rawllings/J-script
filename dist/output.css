@@ -542,12 +542,20 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .rounded-md {
