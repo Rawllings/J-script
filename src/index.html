@@ -165,6 +165,22 @@
       <p>(myFunction is stored in "myScript.js")</p>
     </div>
 
+    <!-- JAVASCRIPT OUTPUT  -->
+
+    <!-- Writing document.write() after an HTML is loaded, will DELETE ALL EXISTING HTML.  -->
+
+    <!-- PRINT STATEMENT (FUNCTION)  -->
+
+    <button
+      class="p-4 bg-red-600 text-white rounded-md mt-2"
+      type="button"
+      onclick="window.print()"
+    >
+      Print
+    </button>
+
+    
+
     <!-- JS SCRIPT   -->
     <script>
       document.getElementById("demo5").innerHTML = "My first JavaScript.";
@@ -172,8 +188,14 @@
       function myFunction() {
         document.getElementById("demo6").innerHTML = "Paragraph changed.";
       }
+
+      document.write(10 + 10);
     </script>
 
     <script src="myScript.js"></script>
+
+    <script>
+      alert(5 + 6);
+    </script>
   </body>
 </html>
