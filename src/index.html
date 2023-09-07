@@ -196,6 +196,8 @@
       </p>
 
       <p id="demo8"></p>
+      <p id="demo9" class="pt-4"></p>
+      <p id="demo10" class="pt-4"></p>
     </div>
 
     <!-- JS SCRIPT   -->
@@ -223,6 +225,28 @@
       let result = myFunction(4, 3);
 
       document.getElementById("demo8").innerHTML = result;
+    </script>
+
+    <script>
+      const person = {
+        firstName: "John",
+        secondName: "Doe",
+        age: 50,
+        eyeColor: "blue",
+        fullName: function () {
+          return this.firstName + " " + this.secondName;
+        },
+      };
+
+      let first = person.firstName;
+      let second = person.secondName;
+      let agee = person.age;
+      let name = person.fullName();
+
+      document.getElementById("demo9").innerHTML =
+        first + " " + second + " " + agee;
+
+      document.getElementById("demo10").innerHTML = name;
     </script>
   </body>
 </html>
